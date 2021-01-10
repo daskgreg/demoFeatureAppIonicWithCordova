@@ -61,7 +61,7 @@ export class AppComponent implements OnInit {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
 
-      timer(10000).subscribe(()=> this.showSplash = false)
+      timer(30).subscribe(()=> this.showSplash = false)
     });
   }
 
