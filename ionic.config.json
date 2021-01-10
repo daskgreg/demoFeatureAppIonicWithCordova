@@ -1,5 +1,7 @@
 {
   "name": "demoFeatureApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
