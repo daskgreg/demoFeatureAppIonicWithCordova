@@ -9,6 +9,7 @@
   <ion-item>
     <ion-input type="text" placeholder="Qr Code Data" [(ngModel)]="qrData"></ion-input>
   </ion-item>
+
   <ion-segment [(ngModel)]="elementType">
       <ion-segment-button value="canvas">
         <ion-label>Canvas</ion-label>
@@ -44,6 +45,7 @@
   <ion-card *ngIf="scannedCode">
     <ion-card-content>
       Result from Scan: {{ scannedCode }}
+      Result from Name: {{ qrData }}
     </ion-card-content>
   </ion-card>
 </ion-content>

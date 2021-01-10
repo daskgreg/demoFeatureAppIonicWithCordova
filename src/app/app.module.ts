@@ -11,6 +11,9 @@ import { Base64ToGallery } from '@ionic-native/base64-to-gallery/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { EmailComposer} from '@ionic-native/email-composer/ngx';
+import { Camera } from '@ionic-native/camera/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,9 +25,13 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   providers: [
     StatusBar,
-    SplashScreen,    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    SplashScreen,    
     BarcodeScanner,
-    Base64ToGallery
+    Base64ToGallery,
+    EmailComposer,
+    Camera,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+   
   ],
   bootstrap: [AppComponent]
 })

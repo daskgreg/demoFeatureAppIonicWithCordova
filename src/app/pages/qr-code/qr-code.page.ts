@@ -25,13 +25,15 @@ export class QrCodePage implements OnInit {
   }
 
   // for the system 
-  
+
   scanQRCode(){
     this.barcodeScanner.scan().then(
       barcodeData => {
         this.scannedCode = barcodeData;
       }
     );
+    console.log('codeData ', this.scannedCode);
+    console.log('name', this.qrData);
   }
 
   // for the user 

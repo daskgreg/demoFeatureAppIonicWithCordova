@@ -17,4 +17,7 @@ export class FolderPage implements OnInit {
   navigateToQrCodePage(){
     this.router.navigate(['qr-code']);
   }
+  navigateToEmailPage(){
+    this.router.navigate(['emails']);
+  }
 }

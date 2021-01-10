@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>emails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-button (click)="captureImage()">Capture Image</ion-button>
+<ion-button (click)="sendEmail()">Send Email</ion-button>
+
+<ion-card>
+  <ion-card-header>
+    Current Image
+  </ion-card-header>
+
+  <ion-card-content>
+    <img [src]="currentImage" *ngIf="currentImage" />
+  </ion-card-content>
+</ion-card>
+</ion-content>
