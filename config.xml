@@ -44,6 +44,18 @@
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
+        <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+            <string>To Scan QR Code</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryAddUsageDescription">
+            <string>To download QR Code</string>
+        </edit-config>
+        <config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist">
+            <string>Photo Library Access Warning</string>
+        </config-file>
+        <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+            <string>Open Qr Code</string>
+        </config-file>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <icon height="57" src="resources/ios/icon/icon.png" width="57" />
